@@ -32,7 +32,6 @@
 			}
 		},
 		gridEl = document.getElementById('theGrid'),
-		sidebarEl = document.getElementById('theSidebar'),
 		gridItemsContainer = gridEl.querySelector('section.grid'),
 		contentItemsContainer = gridEl.querySelector('section.content'),
 		gridItems = gridItemsContainer.querySelectorAll('.grid__item'),
@@ -40,9 +39,7 @@
 		closeCtrl = contentItemsContainer.querySelector('.close-button'),
 		current = -1,
 		lockScroll = false, xscroll, yscroll,
-		isAnimating = false,
-		menuCtrl = document.getElementById('menu-toggle'),
-		menuCloseCtrl = sidebarEl.querySelector('.close-button');
+		isAnimating = false;
 
 	/**
 	 * gets the viewport width and height
@@ -107,18 +104,6 @@
 			}
 		} );
 
-		// hamburger menu button (mobile) and close cross
-		menuCtrl.addEventListener('click', function() {
-			if( !classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.add(sidebarEl, 'sidebar--open');	
-			}
-		});
-
-		menuCloseCtrl.addEventListener('click', function() {
-			if( classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.remove(sidebarEl, 'sidebar--open');
-			}
-		});
 	}
 
 	function loadContent(item) {
