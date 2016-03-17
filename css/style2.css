@@ -84,24 +84,6 @@ button:focus {
   opacity: 1;
 }
 
-/* Top bar above the grid */
-.top-bar {
-  background: #fff;
-  width: 100%;
-  line-height: 1;
-  padding: 15px 15px 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.top-bar__headline {
-  margin: 0;
-  font-size: 0.75em;
-}
 
 /* Menu button for toggling the sidebar (appears on small screen) */
 .menu-toggle {
@@ -156,25 +138,6 @@ button:focus {
   transform: translateY(7px);
 }
 
-/* Filter/dropdown dummy on the right */
-.filter {
-  text-align: right;
-  font-size: 0.75em;
-  margin-left: auto;
-}
-
-.dropdown {
-  font-weight: bold;
-  margin-left: 5px;
-  cursor: pointer;
-  color: #81c483;
-}
-
-.dropdown::after {
-  content: '\25BC';
-  margin-left: 2px;
-  font-size: 80%;
-}
 
 /* Grid item */
 .grid__item {
@@ -804,9 +767,6 @@ button:focus {
 /* small screen changes for sidebar (it becomes an off-canvas menu) */
 @media screen and (max-width: 599px) {
 
-  .top-bar {
-    padding: 22px 15px 10px 60px;
-  }
 
   .menu-toggle {
     display: inline-block;
